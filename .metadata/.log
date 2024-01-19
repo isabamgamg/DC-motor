@@ -479,3 +479,15 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-01-19 10:11:17.895
 !MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-01-19 11:20:49.781
+!MESSAGE Indexed 'freeRTOS' (19 sources, 81 headers) in 2.25 sec: 4,294 declarations; 18,106 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0089%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-01-19 11:59:32.430
+!MESSAGE Indexed 'audioFFT' (19 sources, 81 headers) in 1.76 sec: 4,294 declarations; 18,106 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0089%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-01-19 13:36:24.666
+!MESSAGE Indexed 'audioFFT' (19 sources, 81 headers) in 1.44 sec: 4,294 declarations; 18,106 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0089%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-01-19 13:39:48.399
+!MESSAGE Indexed 'audioFFT' (19 sources, 81 headers) in 0.648 sec: 4,294 declarations; 18,124 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0089%)
