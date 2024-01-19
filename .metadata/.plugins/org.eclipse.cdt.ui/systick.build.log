@@ -1,0 +1,10 @@
+11:59:43 **** Incremental Build of configuration Debug for project systick ****
+make -j16 all 
+arm-none-eabi-size  systick.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15196	    116	   1996	  17308	   439c	systick.elf
+Finished building: default.size.stdout
+ 
+
+11:59:43 Build Finished. 0 errors, 0 warnings. (took 195ms)
+

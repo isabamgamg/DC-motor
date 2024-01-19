@@ -1,0 +1,35 @@
+16:33:01 **** Incremental Build of configuration Debug for project tempAdc ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:115:1: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  115 | printf("start temperature with ADC example\n");
+      | ^~~~~~
+../Core/Src/main.c:25:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   24 | #include "uart.h"
+  +++ |+#include <stdio.h>
+   25 | 
+../Core/Src/main.c:115:1: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  115 | printf("start temperature with ADC example\n");
+      | ^~~~~~
+../Core/Src/main.c:115:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c:150:28: warning: format '%d' expects argument of type 'int', but argument 4 has type 'long unsigned int' [-Wformat=]
+  150 |           printf("%d\t%d\t%d\t%d\n", cdsValue, tempValue, adcValue/100,(int)Kalman((double)tempValue));
+      |                           ~^                              ~~~~~~~~~~~~
+      |                            |                                      |
+      |                            int                                    long unsigned int
+      |                           %ld
+arm-none-eabi-gcc -o "tempAdc.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\npedu-203-19\STM32CubeIDE\workspace_1.14.0\tempAdc\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="tempAdc.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: tempAdc.elf
+ 
+arm-none-eabi-size  tempAdc.elf 
+arm-none-eabi-objdump -h -S tempAdc.elf  > "tempAdc.list"
+   text	   data	    bss	    dec	    hex	filename
+  19724	    152	   2264	  22140	   567c	tempAdc.elf
+Finished building: default.size.stdout
+ 
+Finished building: tempAdc.list
+ 
+
+16:33:02 Build Finished. 0 errors, 3 warnings. (took 852ms)
+

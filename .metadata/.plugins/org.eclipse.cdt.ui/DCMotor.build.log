@@ -1,0 +1,10 @@
+16:01:38 **** Incremental Build of configuration Debug for project DCMotor ****
+make -j16 all 
+arm-none-eabi-size  DCMotor.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17688	    112	   2312	  20112	   4e90	DCMotor.elf
+Finished building: default.size.stdout
+ 
+
+16:01:38 Build Finished. 0 errors, 0 warnings. (took 247ms)
+

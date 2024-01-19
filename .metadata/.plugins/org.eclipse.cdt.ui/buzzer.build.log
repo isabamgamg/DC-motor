@@ -1,0 +1,10 @@
+14:26:30 **** Incremental Build of configuration Debug for project buzzer ****
+make -j16 all 
+arm-none-eabi-size  buzzer.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14564	     52	   1980	  16596	   40d4	buzzer.elf
+Finished building: default.size.stdout
+ 
+
+14:26:30 Build Finished. 0 errors, 0 warnings. (took 257ms)
+

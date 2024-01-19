@@ -1,0 +1,16 @@
+/*
+ * dht11.h
+ *
+ *  Created on: Jan 15, 2024
+ *      Author: npedu-203-19
+ */
+
+#ifndef INC_DHT11_H_
+#define INC_DHT11_H_
+int Temperature ;
+int Humidity ;
+#include "main.h"
+
+int dht11_read (void);
+
+#endif /* INC_DHT11_H_ */

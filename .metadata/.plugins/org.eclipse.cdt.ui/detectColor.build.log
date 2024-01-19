@@ -1,0 +1,10 @@
+11:54:45 **** Incremental Build of configuration Debug for project detectColor ****
+make -j16 all 
+arm-none-eabi-size  detectColor.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20652	    112	   2488	  23252	   5ad4	detectColor.elf
+Finished building: default.size.stdout
+ 
+
+11:54:45 Build Finished. 0 errors, 0 warnings. (took 309ms)
+
